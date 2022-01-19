@@ -1,0 +1,11 @@
+#img-bg{
+    background-image: url(https://i.imgur.com/mBb8qTB.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg2 {
+    background: #C4E9E7
+}
