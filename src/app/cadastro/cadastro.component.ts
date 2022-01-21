@@ -36,12 +36,15 @@ export class CadastroComponent implements OnInit {
     this.usuario.tipo = this.tiposUsuario
 
     if(this.usuario.senha != this.confirmarSenha){
+      console.log(this.usuario.senha)
+      console.log(this.confirmarSenha)
+
       alert('As senhas estão Diferentes')
     } 
     else{
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
-        this.router.navigate(['/entrar'])
+        this.router.navigate(['/login'])
         alert('Usuario Cadastrado com sucesso!')
       })
       }
