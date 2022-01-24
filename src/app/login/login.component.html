@@ -1,35 +1,36 @@
-<div class="container-fluid bg2">
-    <div class="row align-items-center">
-        <div class="col-md-6">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                <div class="row d-flex justify-content-center mb-5">
-                    <img src="https://i.imgur.com/ji11RXP.png" alt="kindofblue">
+<div class="container-fluid bg2 d-flex justify-content-center vh-100 vw-100 text-light m-0 p-0">
+    <div class="d-flex justify-content-center w-50 align-items-center ">
+        <div class="col-md-6 ">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column ">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <img src="https://i.imgur.com/iNZKAEZ.png" alt="kindofblue" width="500">
                 </div>
-                    <h2 class="text-center mb-3 f-slab">Entrar</h2>
+                    <h2 class="text-center mb-3 f-slab text-dark">Entrar</h2>
 
-                    <div class="form-group">
+                    <div class="form-group f-montserrat">
                         <label for="usuario">Usuario</label>
                         <input [(ngModel)]='usuarioLogin.usuario' class="form-control" type="text" name="usuario" 
                         id="usuario" placeholder="Digite seu Usuario">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group f-montserrat">
                         <label for="senha">Senha</label>
                         <input [(ngModel)]='usuarioLogin.senha' class="form-control" type="password" name="senha" 
                         id="senha" placeholder="Digite sua Senha">
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-info" (click)='entrar()'>Entrar</button>
+                        <button type="submit" class="btn bg1 text-white f-montserrat" (click)='entrar()'>Entrar</button>
                     </div>
 
                     <hr class="mt-5 mb-5 bg-dark">
 
-                    <p class="text-center">Não tem uma conta? <a routerLink='/cadastro'>Cadastre-se</a> </p>
+                    <p class="text-center text-dark f-montserrat">Não tem uma conta? <a routerLink='/cadastro'>Cadastre-se</a> </p>
                 </div>
             </div>
         </div>
-        <div class="col-md-6" id="img-bg"></div>
+        <!-- <div class="col-md-6" id="img-bg"></div> -->
     </div>
 </div>
+<app-sobre></app-sobre>

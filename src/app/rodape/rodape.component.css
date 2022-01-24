@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 ul.social-network{
     list-style: none;
     padding: 0;
@@ -16,11 +19,11 @@ ul.social-network li{
 }
 
 .bg1{
-    background: #6BC7C2;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
 .bg3{
-    background: #0F2B2F;
+    background: #E7E9EE;
 }
 
 .fa-linkedin:hover{
@@ -33,4 +36,8 @@ ul.social-network li{
 
 .fa-instagram:hover{
     color: #C13584;;;
+}
+
+.f-montserrat{
+    font-family: Montserrat;
 }

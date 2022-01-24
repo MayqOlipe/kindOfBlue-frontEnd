@@ -1,1 +1,66 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+  <div class="row bg-info d-flex align-items-center">
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-md-10 text-white">
+          <h1 class="f-slab">Bem vindo ao <br> KindofBlue</h1>
+          <p class="f-montserrat">Expresse aqui suas ideias!</p>
+          <button class="btn btn-outline-light mr-3 mb-3 f-montserrat" data-toggle="modal" data-target="#exampleModal">Criar nova postagem</button> 
+          <button class="btn btn-dark mb-3 f-montserrat">Ver Postagens</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <img
+        src="https://i.imgur.com/mBb8qTB.jpg"
+        alt="imageminicio"
+        width="500"
+      />
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active f-montserrat" id="todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="todasPostagens" aria-selected="true">Todas as Postagens</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link f-montserrat" id="minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link f-montserrat" id="postagensTema-tab" data-toggle="tab" href="#postagensTema" role="tab" aria-controls="postagensTema" aria-selected="false">Postagens por tema</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active f-montserrat" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">Todas as postagens aqui</div>
+      <div class="tab-pane fade f-montserrat" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">Minhas postagens aqui</div>
+      <div class="tab-pane fade f-montserrat" id="postagensTema" role="tabpanel" aria-labelledby="postagensTema-tab">Postagens por tema aqui</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title f-slab" id="exampleModalLabel">Criar nova postagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex flex-column">
+        <input id="modalTitulo" type="text" placeholder="Digite seu titulo">
+        <div class="form-group">
+          <label for="texto"></label>
+          <textarea class="form-control" name="texto" id="texto" rows="3" placeholder="Digite seu texto"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary f-montserrat" data-dismiss="modal">Sair</button>
+        <button type="button" class="btn btn-primary f-montserrat">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>

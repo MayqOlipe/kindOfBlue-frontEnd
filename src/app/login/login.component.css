@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 #img-bg{
     background-image: url(https://i.imgur.com/mBb8qTB.jpg);
@@ -9,10 +10,24 @@
 }
 
 .bg2 {
-    background: #C4E9E7
+    background: linear-gradient(to top, #7f7fd5, #86a8e7, #91eae4);
 }
 
 .f-slab{
     font-family: Alfa Slab One;
-    color: #0F2B2F;
+    color: #f8f8f8;
+    margin-top: 2rem;
+}
+
+.bg1{
+    background: #004370;
+}
+
+a {
+    color: #004370;
+}
+
+.f-montserrat{
+    font-family: Montserrat;
+    color: black;
 }

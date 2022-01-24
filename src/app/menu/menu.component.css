@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 a {
     font-size: 1.5rem;
     text-decoration: none;
 }
 
 .bg1{
-    background: #6BC7C2;
+    background: #E7E9EE;
+}
+
+.f-montserrat{
+    font-family: Montserrat;
+}
+
+.f-slab{
+    font-family: Alfa Slab One;
 }
