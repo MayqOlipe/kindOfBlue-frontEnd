@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <div class="row bg-info d-flex align-items-center">
+  <div class="row bg-info d-flex align-items-center py-5">
     <div class="col-md-6 d-flex justify-content-center">
       <div class="row">
-        <div class="col-md-10 text-white">
-          <h1 class="f-slab">Bem vindo ao <br> KindofBlue</h1>
-          <p class="f-montserrat">Expresse aqui suas ideias!</p>
+        <div class="col-md-12 text-white">
+          <h1 class="f-slab fs-54">Bem vindo ao <br><span class="text-dark">KindofBlue</span> </h1>
+          <p class="f-montserrat fs-18">Expresse aqui suas ideias!</p>
           <button class="btn btn-outline-light mr-3 mb-3 f-montserrat" data-toggle="modal" data-target="#exampleModal">Criar nova postagem</button> 
-          <button class="btn btn-dark mb-3 f-montserrat">Ver Postagens</button>
+          <a class="btn btn-dark mb-3" href="#postagens">Ver Postagens</a>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5" id="postagens">
     <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <a class="nav-link active f-montserrat" id="todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="todasPostagens" aria-selected="true">Todas as Postagens</a>
@@ -56,10 +56,23 @@
           <label for="texto"></label>
           <textarea class="form-control" name="texto" id="texto" rows="3" placeholder="Digite seu texto"></textarea>
         </div>
+
+        <div class="form-group">
+          <label for="texto">Escolha um Tema ou  <a data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>: </label>
+          <select name="tema" id="" class="form-control">
+            <option value="">Temas</option>
+          </select>
+        </div>
+
+
+
+
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary f-montserrat" data-dismiss="modal">Sair</button>
-        <button type="button" class="btn btn-primary f-montserrat">Salvar</button>
+        <button type="button" class="btn btn-primary f-montserrat">Publicar</button>
       </div>
     </div>
   </div>
