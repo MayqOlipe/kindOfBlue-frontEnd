@@ -2,22 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
-.fs-54{
-    font-size: 54px;
-}
-
-.fs-18{
-    font-size: 18px;
+.f-slab{
+    font-family: Alfa Slab One;
 }
 
 .f-montserrat{
     font-family: Montserrat;
 }
 
-.f-slab{
-    font-family: Alfa Slab One;
+.fs-54{
+    font-size: 54px;
 }
 
-.bg1{
-    background: #B6EEF6;
+.fs-18{
+    font-size: 18px;
 }
