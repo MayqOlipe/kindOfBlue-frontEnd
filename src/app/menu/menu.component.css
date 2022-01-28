@@ -17,3 +17,12 @@ a {
 .f-slab{
     font-family: Alfa Slab One;
 }
+
+.fs-16{
+    font-size: 35px;
+}
+
+#iconEdit{
+    list-style: none;
+    margin-left: 1rem;
+}

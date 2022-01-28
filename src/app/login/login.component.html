@@ -1,36 +1,71 @@
-<div class="container-fluid bg2 d-flex justify-content-center text-light vh-100 m-0 p-0">
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="col-md-6  d-flex justify-content-center">
-            <div class="row">
-                <div class="col-md-12 flex-column d-flex justify-content-center">
-                <div class="row d-flex justify-content-center align-items-center p-0 m-0">
-                    <img src="https://i.imgur.com/iNZKAEZ.png" alt="kindofblue" width="500">
-                </div>
-                    <h2 class="text-center mb-3 f-slab text-dark">Entrar</h2>
+<div class="container-fluid bg3">
+  <div class="row">
+  <div class="col-md-2 bg3">
+    <a class="p-3 mt-2" routerLink="/sobre" id="sobremim">Sobre Mim</a>
+  </div>
+</div>
+</div>
+<div
+  class="container-fluid bg2 d-flex justify-content-center text-light vh-100 m-0 p-0"
+>
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-md-12 flex-column d-flex justify-content-center">
+          <div
+            class="row d-flex justify-content-center align-items-center p-0 m-0"
+          >
+            <img
+              src="https://i.imgur.com/iNZKAEZ.png"
+              alt="kindofblue"
+              width="500"
+            />
+          </div>
+          <h2 class="text-center mb-3 f-slab text-dark">Entrar</h2>
 
-                    <div class="form-group f-montserrat">
-                        <label for="usuario">Usuario</label>
-                        <input [(ngModel)]='usuarioLogin.usuario' class="form-control" type="text" name="usuario" 
-                        id="usuario" placeholder="Digite seu Usuario">
-                    </div>
+          <div class="form-group f-montserrat">
+            <label for="usuario">Usuario</label>
+            <input
+              [(ngModel)]="usuarioLogin.usuario"
+              class="form-control"
+              type="text"
+              name="usuario"
+              id="usuario"
+              placeholder="Digite seu Usuario"
+            />
+          </div>
 
-                    <div class="form-group f-montserrat">
-                        <label for="senha">Senha</label>
-                        <input [(ngModel)]='usuarioLogin.senha' class="form-control" type="password" name="senha" 
-                        id="senha" placeholder="Digite sua Senha">
-                    </div>
+          <div class="form-group f-montserrat">
+            <label for="senha">Senha</label>
+            <input
+              [(ngModel)]="usuarioLogin.senha"
+              class="form-control"
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua Senha"
+            />
+          </div>
 
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn bg1 text-white f-montserrat" (click)='entrar()'>Entrar</button>
-                    </div>
+          <div class="d-flex justify-content-center">
+            <button
+              type="submit"
+              class="btn bg1 text-white f-montserrat"
+              (click)="entrar()"
+            >
+              Entrar
+            </button>
+          </div>
 
-                    <hr class="mt-5 mb-5 bg-dark">
+          <hr class="mt-5 mb-5 bg-dark" />
 
-                    <p class="text-center text-dark f-montserrat">Não tem uma conta? <a routerLink='/cadastro'>Cadastre-se</a> </p>
-                </div>
-            </div>
+          <p class="text-center text-dark f-montserrat">
+            Não tem uma conta? <a routerLink="/cadastro">Cadastre-se</a>
+          </p>
         </div>
-        <!-- <div class="col-md-6" id="img-bg"></div> -->
+      </div>
     </div>
+    <!-- <div class="col-md-6" id="img-bg"></div> -->
+  </div>
 </div>
 <app-sobre></app-sobre>
