@@ -24,7 +24,7 @@ getByIdTema(id: number):Observable<Tema>{
 return this.http.get<Tema>(`https://kindofblue.herokuapp.com/temas/${id}`, this.token)
 }
 
-postTema(tema: Tema): Observable<Tema>{
+  postTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>('https://kindofblue.herokuapp.com/temas', tema, this.token)
   }
 
